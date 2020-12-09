@@ -40,3 +40,27 @@ msgstr "Ich hatte Probleme, die richtige Zahl für dich zu bekommen. Es tut mir 
 
 msgid "TEAM_02_CHECK_QUESTIONS_REQUEST_ERROR"
 msgstr "Ich hatte Probleme, die Zahl der Fragen zu bekommen. Der Fehler ist {err}"
+
+msgid "TEAM_02_ADD_QUESTIONS_READ"
+msgstr "Okay. Wie lautet deine ja-nein Frage?"
+
+msgid "TEAM_02_ADD_QUESTIONS_ANSWER_READ"
+msgstr "Tolle Frage. Wie würdest du selbst darauf antworten?"
+
+msgid "TEAM_02_ADD_QUESTIONS_ANSWER_COMPLETE_READ"
+msgstr "Deine Frage wurde hinzugefügt. Möchtest du weitere Fragen hinzufügen?"
+
+msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MATCH"
+msgstr "Du hast einen Match! Möchtest du weitere Fragen beantworten?"
+
+msgid "TEAM_02_MATCHES_COUNT_READ"
+msgstr "Du hast {count} Matches."
+
+msgid "TEAM_02_MATCHES_COUNT_RESPONSE_ERROR"
+msgstr "Ich hatte Probleme, die richtige Zahl für dich zu bekommen. Es tut mir leid :("
+
+msgid "TEAM_02_MATCHES_COUNT_REQUEST_ERROR"
+msgstr "Ich hatte Probleme, die Zahl der Fragen zu bekommen. Der Fehler ist {err}"
+
+msgid "TEAM_02_MATCHES_CONTACTS_READ"
+msgstr "Der Instagram-Benutzername deines Matches ist {username}."

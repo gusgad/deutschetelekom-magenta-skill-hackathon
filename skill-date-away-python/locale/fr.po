@@ -40,3 +40,24 @@ msgstr "I had a trouble getting the count for you. I'm sorry :("
 
 msgid "TEAM_02_CHECK_QUESTIONS_REQUEST_ERROR"
 msgstr "I had a trouble getting the count. The error is {err}"
+
+msgid "TEAM_02_ADD_QUESTIONS_READ"
+msgstr "Okay. What is your yes-no question?"
+
+msgid "TEAM_02_ADD_QUESTIONS_ANSWER_READ"
+msgstr "Great question. What would be your own answer to that?"
+
+msgid "TEAM_02_ADD_QUESTIONS_ANSWER_COMPLETE_READ"
+msgstr "Your question has been added. Would you like to add more questions?"
+
+msgid "TEAM_02_MATCHES_COUNT_READ"
+msgstr "You have {count} Matches."
+
+msgid "TEAM_02_MATCHES_COUNT_RESPONSE_ERROR"
+msgstr "I had a trouble getting the count for you. I'm sorry :("
+
+msgid "TEAM_02_MATCHES_COUNT_REQUEST_ERROR"
+msgstr "I had a trouble getting the count. The error is {err}"
+
+msgid "TEAM_02_MATCHES_CONTACTS_READ"
+msgstr "The Instagram username of your latest match is {username}."

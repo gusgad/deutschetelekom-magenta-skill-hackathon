@@ -15,7 +15,7 @@ module.exports = {
           answered_questions: '{"question_id": 1, "match": true};{"question_id": 2, "match": false}'
         },
         {
-          username: "Hannah",
+          username: "hannah1994",
           password: "abc123",
           createdAt: timestamp,
           updatedAt: timestamp,

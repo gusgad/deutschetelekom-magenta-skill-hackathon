@@ -9,7 +9,9 @@ const Questions = require("./models").questions;
 connectToDatabase();
 
 app.use(cors());
-app.get("/count", async (req, res) => {
+
+/* TEAM_02_CHECK_QUESTIONS */
+app.get("/count-questions", async (req, res) => {
   try {
     const user = await User.findById(1);
     const questions = await Questions.findAll();
@@ -31,6 +33,44 @@ app.get("/count", async (req, res) => {
     });
     
     const response = { value: questionsIds.length - unansweredQuestionsCount };
+    res.send(response);
+  } catch (error) {
+    res.status(422).send(error);
+  }
+});
+
+
+
+/* TEAM_02_MATCHES_COUNT */
+app.get("/count-matches", async (req, res) => {
+  try {
+    const user = await User.findById(1);
+
+    const answeredQuestions = user.answered_questions.split(';').filter(question => question).map(question => {
+      return JSON.parse(question);
+    });
+
+    const questionMatches = {};
+
+    answeredQuestions.forEach(answeredQuestion => {
+      if (!questionMatches.hasOwnProperty(answeredQuestion.user_id)) {
+        questionMatches[answeredQuestion.user_id] = 0;
+      } 
+
+      if (answeredQuestion.match) {
+        questionMatches[answeredQuestion.user_id] += 1;
+      }
+    });
+
+    let matchesCount = 0;
+
+    for (let [questionMatch, value] of Object.entries(questionMatches)) {
+      if (value >= 3) {
+        matchesCount += 1;
+      }
+    }
+    
+    const response = { value: matchesCount };
     res.send(response);
   } catch (error) {
     res.status(422).send(error);
