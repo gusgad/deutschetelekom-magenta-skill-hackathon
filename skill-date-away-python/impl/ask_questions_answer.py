@@ -11,6 +11,7 @@ from random import randint
 from skill_sdk import skill, Response, ask, tell
 from skill_sdk.l10n import _
 import requests
+from six.moves import urllib
 
 # Get the answer from our user for the question asked by another user
 INTENT_NAME = 'TEAM_02_ASK_QUESTIONS_ANSWER'
@@ -18,6 +19,9 @@ INTENT_NAME = 'TEAM_02_ASK_QUESTIONS_ANSWER'
 @skill.intent_handler(INTENT_NAME)
 def handler(stt: str) -> Response:
     try:
+        print('STRING TO TEXT VALUE:', stt)
+        stt = urllib.parse.quote(stt)
+        print('STRING TO TEXT VALUE PARSED:', stt)
         # We make a request to our backend API to pass the user answer
         # didn't find a way how to pass payload to POST req, so making a GET instead
         response = requests.get('http://node-app:5000/questions-answer/' + stt, timeout=10)

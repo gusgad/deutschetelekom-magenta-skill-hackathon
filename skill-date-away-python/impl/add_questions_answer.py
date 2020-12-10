@@ -19,7 +19,9 @@ INTENT_NAME = 'TEAM_02_ADD_QUESTIONS_ANSWER'
 @skill.intent_handler(INTENT_NAME)
 def handler(stt: str) -> Response:
     try:
+        print('STRING TO TEXT VALUE:', stt)
         userQuestion = urllib.parse.quote(stt)
+        print('STRING TO TEXT VALUE PARSED:', userQuestion)
 
         # We make a request to our backend API to pass the user question
         # didn't find a way how to pass payload to POST req, so making a GET instead
