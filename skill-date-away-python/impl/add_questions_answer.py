@@ -17,15 +17,13 @@ from six.moves import urllib
 INTENT_NAME = 'TEAM_02_ADD_QUESTIONS_ANSWER'
 
 @skill.intent_handler(INTENT_NAME)
-def handler(stt: str) -> Response:
+def handler(stt_text: str) -> Response:
     try:
-        print('STRING TO TEXT VALUE:', stt)
-        userQuestion = urllib.parse.quote(stt)
-        print('STRING TO TEXT VALUE PARSED:', userQuestion)
+        stt_text_quoted = urllib.parse.quote(stt_text)
 
         # We make a request to our backend API to pass the user question
         # didn't find a way how to pass payload to POST req, so making a GET instead
-        response = requests.get('http://node-app:5000/questions-add/' + userQuestion, timeout=10)
+        response = requests.get('http://node-app:5000/questions-add/' + stt_text_quoted, timeout=10)
         # We parse the response json or raise exception if unsuccessful
         response.raise_for_status()
         data = response.json()

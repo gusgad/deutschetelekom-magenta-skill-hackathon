@@ -17,12 +17,12 @@ from six.moves import urllib
 INTENT_NAME = 'TEAM_02_ADD_QUESTIONS_ANSWER_COMPLETE'
 
 @skill.intent_handler(INTENT_NAME)
-def handler(stt: str) -> Response:
+def handler(stt_text: str) -> Response:
     try:
-        userAnswer = urllib.parse.quote(stt)
+        stt_text_quoted = urllib.parse.quote(stt_text)
 
         # We make a request to our backend API to add our own answer to our question
-        response = requests.get('http://node-app:5000/questions-ask-complete/' + userAnswer, timeout=10)
+        response = requests.get('http://node-app:5000/questions-ask-complete/' + stt_text_quoted, timeout=10)
         # We parse the response json or raise exception if unsuccessful
         response.raise_for_status()
         data = response.json()

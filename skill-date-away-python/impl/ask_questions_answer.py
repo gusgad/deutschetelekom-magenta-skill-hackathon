@@ -19,9 +19,7 @@ INTENT_NAME = 'TEAM_02_ASK_QUESTIONS_ANSWER'
 @skill.intent_handler(INTENT_NAME)
 def handler(stt_text: str) -> Response:
     try:
-        print('STRING TO TEXT VALUE:', stt_text)
         stt_text_quoted = urllib.parse.quote(stt_text)
-        print('STRING TO TEXT VALUE PARSED:', stt_text_quoted)
         # We make a request to our backend API to pass the user answer
         # didn't find a way how to pass payload to POST req, so making a GET instead
         response = requests.get('http://node-app:5000/questions-answer/' + stt_text_quoted, timeout=10)
