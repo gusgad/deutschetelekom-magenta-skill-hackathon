@@ -15,15 +15,16 @@ module.exports = {
         type: Sequelize.STRING
       },
       answered_questions: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       createdAt: {
-        allowNull: false,
         type: Sequelize.DATE
       },
       updatedAt: {
-        allowNull: false,
         type: Sequelize.DATE
+      },
+      matched_users: {
+        type: Sequelize.TEXT
       }
     });
 
@@ -44,11 +45,9 @@ module.exports = {
         type: Sequelize.STRING
       },
       createdAt: {
-        allowNull: false,
         type: Sequelize.DATE
       },
       updatedAt: {
-        allowNull: false,
         type: Sequelize.DATE
       }
     });

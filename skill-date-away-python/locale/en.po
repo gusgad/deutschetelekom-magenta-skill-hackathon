@@ -10,28 +10,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: en_US\n"
 
-
-msgid "HELLOAPP_HELLO"
-msgstr "Hello"
-
-msgid "HELLOAPP_JOKE"
-msgstr "I have a joke for you! {joke}"
-
-msgid "HELLOAPP_REQUEST_ERROR"
-msgstr "I had a trouble getting a joke. The error is {err}"
-
-msgid "HELLOAPP_RESPONSE_ERROR"
-msgstr "I had a trouble getting a joke for you. I'm sorry :("
-
-msgid "HELLOAPP_NUMBER_SUCCESS_MESSAGE"
-msgstr "Congratulations! The number is {number}"
-
-msgid "HELLOAPP_NUMBER_WRONG_MESSAGE"
-msgstr "I'm sorry, that was not my number. Maybe next time?"
-
-msgid "HELLOAPP_NO_NUMBER_MESSAGE"
-msgstr "I had a trouble understanding you. Please guess a number in a range of 1 to 10."
-
 msgid "TEAM_02_CHECK_QUESTIONS_READ"
 msgstr "You have {count} new questions."
 
@@ -42,16 +20,25 @@ msgid "TEAM_02_CHECK_QUESTIONS_REQUEST_ERROR"
 msgstr "I had a trouble getting the count. The error is {err}"
 
 msgid "TEAM_02_ADD_QUESTIONS_READ"
-msgstr "Okay. What is your yes-no question?"
+msgstr "Okay. What is your yes-no question? Please, start with 'my question is'."
 
 msgid "TEAM_02_ADD_QUESTIONS_ANSWER_READ"
-msgstr "Great question. What would be your own answer to that?"
+msgstr "Great question. What would be your own answer to that? Please, just answer with 'I say yes or I say no."
 
 msgid "TEAM_02_ADD_QUESTIONS_ANSWER_COMPLETE_READ"
-msgstr "Your question has been added. Would you like to add more questions?"
+msgstr "Your question has been added. Would you like to add more questions? If yes, say 'one more question'."
 
 msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MATCH"
-msgstr "You have a match!. Would you like to answer to more questions?"
+msgstr "You have a match!. Would you like to answer to more questions? If yes, please say 'I am ready'."
+
+msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MORE"
+msgstr "Interesting! Would you like to answer to more questions? If yes, please say 'I am ready'."
+
+msgid "TEAM_02_ASK_QUESTIONS_ANSWER_RESPONSE_ERROR"
+msgstr "I had a trouble getting the results for you. I'm sorry :("
+
+msgid "TEAM_02_ASK_QUESTIONS_ANSWER_REQUEST_ERROR"
+msgstr "I had a trouble getting the results. The error is {err}"
 
 msgid "TEAM_02_MATCHES_COUNT_READ"
 msgstr "You have {count} Matches."
@@ -64,3 +51,9 @@ msgstr "I had a trouble getting the count. The error is {err}"
 
 msgid "TEAM_02_MATCHES_CONTACTS_READ"
 msgstr "The Instagram username of your latest match is {username}."
+
+msgid "TEAM_02_MATCHES_CONTACTS_RESPONSE_ERROR"
+mmsgstr "You don't have any matches yet."
+
+msgid "TEAM_02_MATCHES_CONTACTS_REQUEST_ERROR"
+msgstr "I had a trouble getting the name. The error is {err}"
