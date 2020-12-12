@@ -1,5 +1,7 @@
 # DateAway Magenta Skill (TEAM_02)
 
+[DEMO VIDEO](https://www.dropbox.com/s/rs843qa71n2q86u/TEAM_02%20%7C%20DateAway%20%7C%20Remote%20Rhapsody.mov?dl=0)
+
 This is skill repository made for the Remote Rhapsody Hackathon by hubraum, BeMyApp & Deutsche Telekom. The idea of the skill is to connect users by asking them personalized questions made by users themselves. As soon as their answers align, they receive a match and are able to get personal contacts, for ex. Instagram username.
 
 ### Available intents
