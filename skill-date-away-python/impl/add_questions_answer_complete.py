@@ -30,7 +30,7 @@ def handler(stt_text: str) -> Response:
         # We get a translated message
         if random.random() > 0 and random.random() < 0.5:
             msg = _('TEAM_02_ADD_QUESTIONS_ANSWER_COMPLETE_READ')
-        elif expression:
+        else:
             msg = _('TEAM_02_ADD_QUESTIONS_ANSWER_COMPLETE_READ2')
  
     except requests.exceptions.RequestException as err:
