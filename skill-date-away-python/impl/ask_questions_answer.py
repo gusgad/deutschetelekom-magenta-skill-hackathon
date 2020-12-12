@@ -7,7 +7,7 @@
 # For details see the file LICENSE in the top directory.
 #
 #
-from random import randint
+import random
 from skill_sdk import skill, Response, ask, tell
 from skill_sdk.l10n import _
 import requests
@@ -30,13 +30,28 @@ def handler(stt_text: str) -> Response:
         if data['value']:
             # We get the count value from the response data
             result = data['value']
-            print('AAAA', result)
-
+            msg = ''
             # We get a translated message
             if result == 'match':
-                msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MATCH')
+                if random.random() > 0 and random.random() < 0.25:
+                    msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MATCH')
+                elif random.random() > 0.25 and random.random() < 0.50:
+                    msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MATCH2')
+                elif random.random() > 0.50 and random.random() < 0.75:
+                    msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MATCH3')
+                elif random.random() > 0.75 and random.random() < 1:
+                    msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MATCH4')
             else:
-                msg = "Interessant! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
+                if random.random() > 0 and random.random() < 0.20:
+                    msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MORE')
+                elif random.random() > 0.20 and random.random() < 0.40:
+                    msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MORE2')
+                elif random.random() > 0.40 and random.random() < 0.60:
+                    msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MORE3')
+                elif random.random() > 0.60 and random.random() < 0.80:
+                    msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MORE4')
+                elif random.random() > 0.80 and random.random() < 1:
+                    msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MORE5')
               
         else:
             msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_RESPONSE_ERROR')

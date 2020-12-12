@@ -7,35 +7,32 @@
 # For details see the file LICENSE in the top directory.
 #
 #
-import random
 from skill_sdk import skill, Response, ask, tell
 from skill_sdk.l10n import _
 import requests
 from six.moves import urllib
 
-# Add the answer of the user itself to the previously added question
-INTENT_NAME = 'TEAM_02_ADD_QUESTIONS_ANSWER_COMPLETE'
+
+# Successfully added the social media username
+INTENT_NAME = 'TEAM_02_ADD_SOCIAL_MEDIA_USERNAME_ANSWER'
 
 @skill.intent_handler(INTENT_NAME)
 def handler(stt_text: str) -> Response:
     try:
         stt_text_quoted = urllib.parse.quote(stt_text)
 
-        # We make a request to our backend API to add our own answer to our question
-        response = requests.get('http://node-app:5000/questions-ask-complete/' + stt_text_quoted, timeout=10)
+        # We make a request to our backend API to pass the social media username
+        # didn't find a way how to pass payload to POST req, so making a GET instead
+        response = requests.get('http://node-app:5000/social-media-add/' + stt_text_quoted, timeout=10)
         # We parse the response json or raise exception if unsuccessful
         response.raise_for_status()
         data = response.json()
         
-        # We get a translated message
-        if random.random() > 0 and random.random() < 0.5:
-            msg = _('TEAM_02_ADD_QUESTIONS_ANSWER_COMPLETE_READ')
-        elif expression:
-            msg = _('TEAM_02_ADD_QUESTIONS_ANSWER_COMPLETE_READ2')
- 
+        msg = _('TEAM_02_ADD_SOCIAL_MEDIA_USERNAME_ANSWER_READ')
+
     except requests.exceptions.RequestException as err:
         msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_REQUEST_ERROR', err=err)
-
     
     # We return the response
     return ask(msg)
+

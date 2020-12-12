@@ -12,7 +12,7 @@ module.exports = {
           password: "abc123",
           createdAt: timestamp,
           updatedAt: timestamp,
-          answered_questions: '{"question_id": 1, "user_id": 2, "match": true};',
+          answered_questions: '{"question_id": 1, "user_id": 2, "match": false};',
           matched_users: ''
         },
         {
@@ -35,7 +35,7 @@ module.exports = {
       {}
     );
 
-    const questions = [
+    let questions = [
       "Speilst du gerne Gitarre?",
       "Magst du Tiere?",
       "Magst du Katzen?",
@@ -90,11 +90,13 @@ module.exports = {
       "Rauchst du?",
       "Programmierst du gerne?",
       "Bist du meistents Sportlich aktiv?",
-    ].map((question, index) => {
+    ].sort(() => 0.5 - Math.random());
+      
+    questions = questions.map((question, index) => {
       return {
         user_id: index > 35 ? 3 : 2,
         questions_text: question,
-        questions_answer: Math.random() > 0.5 ? 'Ja' : 'Nein',
+        questions_answer: index % 2 === 0 ? 'Ja' : 'Nein',
         createdAt: timestamp,
         updatedAt: timestamp,
       }

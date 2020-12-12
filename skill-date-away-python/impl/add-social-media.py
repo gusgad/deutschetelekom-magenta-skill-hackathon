@@ -9,15 +9,14 @@
 #
 from skill_sdk import skill, Response, ask, tell
 from skill_sdk.l10n import _
-import requests
 
-# User adds his/her own question, so that others get 
-INTENT_NAME = 'TEAM_02_ADD_QUESTIONS'
+# User adds his/her own social media username so others can ask for it
+INTENT_NAME = 'TEAM_02_ADD_SOCIAL_MEDIA_USERNAME'
 
 @skill.intent_handler(INTENT_NAME)
 def handler() -> Response:
 
-    msg = _('TEAM_02_ADD_QUESTIONS_READ')
+    msg = _('TEAM_02_ADD_SOCIAL_MEDIA_USERNAME_READ')
     
     # We return the response
     return ask(msg)

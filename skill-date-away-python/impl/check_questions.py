@@ -7,7 +7,6 @@
 # For details see the file LICENSE in the top directory.
 #
 #
-from random import randint
 from skill_sdk import skill, Response, ask, tell
 from skill_sdk.l10n import _
 import requests
@@ -24,15 +23,15 @@ def handler() -> Response:
         response.raise_for_status()
         data = response.json()
         
-        if data['value']:
-            # We get the count value from the response data
-            count = data['value']
-            print('count', count)
-  
+        # We get the count value from the response data
+        count = data['value']
+
+        if count > 0:
             # We get a translated message
             msg = _('TEAM_02_CHECK_QUESTIONS_READ', count=count)
         else:
-            msg = _('TEAM_02_CHECK_QUESTIONS_RESPONSE_ERROR')
+            msg = _('TEAM_02_CHECK_QUESTIONS_READ_NONE')
+
     except requests.exceptions.RequestException as err:
         msg = _('TEAM_02_CHECK_QUESTIONS_REQUEST_ERROR', err=err)
 

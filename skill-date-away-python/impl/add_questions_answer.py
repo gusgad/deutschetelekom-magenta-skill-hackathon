@@ -7,7 +7,7 @@
 # For details see the file LICENSE in the top directory.
 #
 #
-from random import randint
+import random
 from skill_sdk import skill, Response, ask, tell
 from skill_sdk.l10n import _
 import requests
@@ -29,7 +29,11 @@ def handler(stt_text: str) -> Response:
         data = response.json()
         
         if data['value']:
-            msg = _('TEAM_02_ADD_QUESTIONS_ANSWER_READ')
+            if random.random() > 0 and random.random() < 0.5:
+                msg = _('TEAM_02_ADD_QUESTIONS_ANSWER_READ')
+            elif random.random() > 0.5 and random.random() < 1:
+                msg = _('TEAM_02_ADD_QUESTIONS_ANSWER_READ2')
+            
         else:
             msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_RESPONSE_ERROR')
     except requests.exceptions.RequestException as err:

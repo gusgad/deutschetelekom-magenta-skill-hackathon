@@ -7,7 +7,6 @@
 # For details see the file LICENSE in the top directory.
 #
 #
-from random import randint
 from skill_sdk import skill, Response, ask, tell
 from skill_sdk.l10n import _
 import requests
@@ -27,12 +26,11 @@ def handler() -> Response:
         if data['value']:
             # We get the username value from the response data
             username = data['value']
-            print('AAAAAA', username)
   
             # We get a translated message
             msg = _('TEAM_02_MATCHES_CONTACTS_READ', username=username)
         else:
-            msg = 'Du hast noch keine Matches.'
+            msg = _('TEAM_02_MATCHES_CONTACTS_NONE')
     except requests.exceptions.RequestException as err:
         msg = _('TEAM_02_MATCHES_CONTACTS_REQUEST_ERROR', err=err)
     

@@ -221,14 +221,14 @@ app.get("/questions-answer/:answer", async (req, res) => {
           let matchesCount = 0;
           let matchedUserIDs = [];
           for (let [questionMatch, value] of Object.entries(questionMatches)) {
-            if (value > 3) {
+            if (value >= 3) {
               matchesCount += 1;
               matchedUserIDs.unshift(Number(questionMatch));
             }
           }
           matchedUserIDs = JSON.stringify([...new Set(matchedUserIDs)]).replace('[', '').replace(']', '') + ',';
           let response;
-          if (questionMatches[latestUnansweredQuestion.user_id] > 3) {
+          if (questionMatches[latestUnansweredQuestion.user_id] >= 3) {
             // we have a user match after 3 same answers
  
             User.update({matched_users: matchedUserIDs}, { where: { id: 1 } }).then(async (result) => {
@@ -297,6 +297,24 @@ app.get("/questions-ask-complete/:answer", async (req, res) => {
     const answer = req.params.answer.toLowerCase().split('mit')[1].trim() === 'ja';
 
     Questions.update({questions_answer: answer ? 'Ja' : 'Nein'}, { where: { questions_answer: null } }).then(async (result) => {
+      console.log(result);
+    });
+
+    const response = { value: answer };
+    res.send(response);
+  } catch (error) {
+    res.status(422).send(error);
+  }
+});
+
+
+
+/* TEAM_02_ADD_SOCIAL_MEDIA_USERNAME_ANSWER */
+app.get("/social-media-add/:answer", async (req, res) => {
+  try {
+    const answer = req.params.answer.toLowerCase().split('lautet')[1].trim();
+
+    User.update({username: answer }, { where: { id: 1 } }).then(async (result) => {
       console.log(result);
     });
 

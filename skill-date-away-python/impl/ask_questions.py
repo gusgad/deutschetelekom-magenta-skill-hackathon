@@ -7,7 +7,6 @@
 # For details see the file LICENSE in the top directory.
 #
 #
-from random import randint
 from skill_sdk import skill, Response, ask, tell
 from skill_sdk.l10n import _
 import requests
@@ -29,7 +28,7 @@ def handler() -> Response:
             question = data['value']
   
             # We get a translated message
-            msg = "Die Frage lautet: " + question + " Sag bitte einfach 'meine Antwort ist ja oder meine Antwort ist nein'."
+            msg =  _('TEAM_02_ASK_QUESTIONS_READ', question=question)
         else:
             msg = _('TEAM_02_ASK_QUESTIONS_RESPONSE_ERROR')
     except requests.exceptions.RequestException as err:

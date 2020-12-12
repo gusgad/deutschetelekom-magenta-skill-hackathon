@@ -11,14 +11,14 @@ from skill_sdk import skill, Response, ask, tell
 from skill_sdk.l10n import _
 import requests
 
-# User adds his/her own question, so that others get 
-INTENT_NAME = 'TEAM_02_ADD_QUESTIONS'
+# Explain why user has no matches
+INTENT_NAME = 'TEAM_02_HOW_NO_MATCHES'
 
 @skill.intent_handler(INTENT_NAME)
 def handler() -> Response:
 
-    msg = _('TEAM_02_ADD_QUESTIONS_READ')
+    msg = _('TEAM_02_HOW_NO_MATCHES_READ')
     
     # We return the response
-    return ask(msg)
+    return tell(msg)
 

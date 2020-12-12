@@ -10,32 +10,111 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de_DE\n"
 
+
+
+
+
+
 msgid "TEAM_02_CHECK_QUESTIONS_READ"
 msgstr "Du hast {count} neue Fragen."
 
-msgid "TEAM_02_CHECK_QUESTIONS_RESPONSE_ERROR"
-msgstr "Ich hatte Probleme, die richtige Zahl für dich zu bekommen. Es tut mir leid :("
+msgid "TEAM_02_CHECK_QUESTIONS_READ_NONE"
+msgstr "Du hast noch keine neuen Fragen zum Antworten. Bitte warte, bis andere ihre Fragen hinzufügen."
 
 msgid "TEAM_02_CHECK_QUESTIONS_REQUEST_ERROR"
 msgstr "Ich hatte Probleme, die Zahl der Fragen zu bekommen. Der Fehler ist {err}"
 
+
+
+
+
+msgid "TEAM_02_HOW_WORKS_READ"
+msgstr "DateAway bringt Menschen zusammen, indem es ihnen Fragen stellt und Menschen mit gleichen Antworten Matcht. Füge bitte zunächst ein paar deiner eigenen Fragen hinzu, die du von anderen beantworten lassen möchtest. Dann verbinde dein Instagram-Benutzernamen mit der App und schließlich beginne die Fragen anderer zu beantworten."
+
+
+
+
+
+msgid "TEAM_02_HOW_NO_MATCHES_READ"
+msgstr "Du wirst mit einem anderen Benutzer zusammengebracht, sobald drei deiner Antworten auf dessen Fragen mit denen des anderen Benutzers übereinstimmen. Für anderen und ihre Fragen gelten die gleichen Regeln. Fang also an, Fragen zu beantworten, um Matches zu bekommen."
+
+
+
+
+
+msgid "TEAM_02_HOW_MANY_QUESTIONS"
+msgstr "Niemand weiß, wie viele Fragen es insgesamt gibt. Die Fragen aller Benutzer werden gemischt und später an einzelne Benutzer gesendet. Um mehr Treffer zu erhalten, ist es empfehlenswert, eigene Fragen in den 'Topf' zu werfen."
+
+
+
+
+
 msgid "TEAM_02_ADD_QUESTIONS_READ"
-msgstr "Okay. Wie lautet deine ja-nein Frage? Fang bitte an mit 'meine Frage lautet'."
+msgstr "Okay. Wie lautet deine ja-nein Frage? Fang bitte mit 'meine Frage lautet' an."
+
+
+
+
 
 msgid "TEAM_02_ADD_QUESTIONS_ANSWER_READ"
-msgstr "Tolle Frage. Wie würdest du selbst darauf antworten? Sag bitte einfach 'meine Antwort ist ja oder meine Antwort ist nein'."
+msgstr "Tolle Frage. Wie würdest du selbst darauf antworten? Sag bitte einfach 'ich antworte mit ja oder ich antworte mit nein'."
 
-msgid "TEAM_02_ADD_QUESTIONS_ANSWER_READ"
-msgstr "Tolle Frage. Wie würdest du selbst darauf antworten? Sag bitte einfach 'meine Antwort ist ja oder meine Antwort ist nein'."
+msgid "TEAM_02_ADD_QUESTIONS_ANSWER_READ2"
+msgstr "Alles klar. Wie würdest du selbst darauf antworten? Sag bitte einfach 'ich antworte mit ja oder ich antworte mit nein'."
+
+
+
+
 
 msgid "TEAM_02_ADD_QUESTIONS_ANSWER_COMPLETE_READ"
 msgstr "Deine Frage wurde hinzugefügt. Möchtest du weitere Fragen hinzufügen? Wenn ja, sag bitte 'noch eine Frage'."
 
+msgid "TEAM_02_ADD_QUESTIONS_ANSWER_COMPLETE_READ2"
+msgstr "Fertig. Möchtest du weitere Fragen hinzufügen? Wenn ja, sag bitte 'noch eine Frage'."
+
+
+
+
+
+msgid "TEAM_02_ASK_QUESTIONS_READ"
+msgstr "Die Frage lautet: {question}. Sag bitte einfach 'meine Antwort ist ja oder meine Antwort ist nein'."
+
+msgid "TEAM_02_ASK_QUESTIONS_RESPONSE_ERROR"
+msgstr "Ich hatte Probleme, die Frage für dich zu bekommen. Es tut mir leid :("
+
+msgid "TEAM_02_ASK_QUESTIONS_REQUEST_ERROR"
+msgstr "Ich hatte Probleme, die Frage zu bekommen. Der Fehler ist {err}"
+
+
+
+
+
 msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MATCH"
-msgstr "Du hast einen Match! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
+msgstr "Herzlichen Glückwunsch! Du hast einen Match bekommen! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
+
+msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MATCH2"
+msgstr "Gratulation! Du hast einen Match! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
+
+msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MATCH3"
+msgstr "Yuhuuu! Du hast einen Match! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
+
+msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MATCH4"
+msgstr "Endlich! Du hast einen Match! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
 
 msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MORE"
 msgstr "Interessant! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
+
+msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MORE2"
+msgstr "Interessant! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
+
+msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MORE3"
+msgstr "Tolle Antwort! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
+
+msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MORE4"
+msgstr "Ach, okay! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
+
+msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MORE5"
+msgstr "Okay! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
 
 msgid "TEAM_02_ASK_QUESTIONS_ANSWER_RESPONSE_ERROR"
 msgstr "Ich hatte Probleme, das Ergebnis für dich zu bekommen. Es tut mir leid :("
@@ -43,26 +122,46 @@ msgstr "Ich hatte Probleme, das Ergebnis für dich zu bekommen. Es tut mir leid 
 msgid "TEAM_02_ASK_QUESTIONS_ANSWER_REQUEST_ERROR"
 msgstr "Ich hatte Probleme, das Ergebnis zu bekommen. Der Fehler ist {err}"
 
+
+
+
+
 msgid "TEAM_02_MATCHES_COUNT_READ"
 msgstr "Du hast {count} Matches."
 
-msgid "TEAM_02_MATCHES_COUNT_RESPONSE_ERROR"
-msgstr "Ich hatte Probleme, die richtige Zahl für dich zu bekommen. Es tut mir leid :("
+msgid "TEAM_02_MATCHES_COUNT_ONE"
+msgstr "Du hast einen Match."
+
+msgid "TEAM_02_MATCHES_COUNT_NONE"
+msgstr "Du hast noch keine Matches. Um Matches zu bekommen, sag bitte 'Stell mir eine DateAway Frage'."
 
 msgid "TEAM_02_MATCHES_COUNT_REQUEST_ERROR"
 msgstr "Ich hatte Probleme, die Zahl der Fragen zu bekommen. Der Fehler ist {err}"
 
+
+
+
+
+
 msgid "TEAM_02_MATCHES_CONTACTS_READ"
 msgstr "Der Instagram-Benutzername deines neuesten Matches ist {username}."
 
-msgid "TEAM_02_MATCHES_CONTACTS_RESPONSE_ERROR"
-msgstr "Du hast noch keine Matches."
+msgid "TEAM_02_MATCHES_CONTACTS_NONE"
+msgstr "Du hast noch keine Matches. Um Matches zu bekommen, sag bitte 'Stell mir eine DateAway Frage'."
 
 msgid "TEAM_02_MATCHES_CONTACTS_REQUEST_ERROR"
 msgstr "Ich hatte Probleme, den Namen zu bekommen. Der Fehler ist {err}"
 
-msgid "TEAM_02_ASK_QUESTIONS_RESPONSE_ERROR"
-msgstr "Ich hatte Probleme, die Frage für dich zu bekommen. Es tut mir leid :("
 
-msgid "TEAM_02_MATCHES_CONTACTS_REQUEST_ERROR"
-msgstr "Ich hatte Probleme, die Frage zu bekommen. Der Fehler ist {err}"
+
+
+
+msgid "TEAM_02_ADD_SOCIAL_MEDIA_USERNAME_READ"
+msgstr "Gerne. Wie lautet dein Instagram-Benutzername? Fang bitte mit 'mein Benutzername lautet' an."
+
+
+
+
+
+msgid "TEAM_02_ADD_SOCIAL_MEDIA_USERNAME_ANSWER_READ"
+msgstr "Alles klar. Dein Instagram-Benutzername wurde hinzugefügt."
