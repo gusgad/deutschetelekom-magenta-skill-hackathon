@@ -31,6 +31,14 @@ module.exports = {
           answered_questions: '',
           matched_users: ''
         },
+        {
+          username: "ivan_kjellberg",
+          password: "abc123",
+          createdAt: timestamp,
+          updatedAt: timestamp,
+          answered_questions: '',
+          matched_users: ''
+        },
       ],
       {}
     );
@@ -174,8 +182,9 @@ module.exports = {
     ].sort(() => 0.5 - Math.random());
       
     questions = questions.map((question, index) => {
+      const userID = Math.random() > 0 && Math.random() < 0.3 ? 2 : Math.random() > 0.3 && Math.random() < 0.6 ? 3 : 4;
       return {
-        user_id: index > 35 ? 3 : 2,
+        user_id: userID,
         questions_text: question,
         questions_answer: Math.random() > 0.5 ? 'Ja' : 'Nein',
         createdAt: timestamp,
