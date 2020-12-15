@@ -31,26 +31,27 @@ def handler(stt_text: str) -> Response:
             # We get the count value from the response data
             result = data['value']
             msg = ''
+            rand_number = random.random()
             # We get a translated message
             if result == 'match':
-                if random.random() > 0 and random.random() < 0.25:
+                if rand_number > 0 and rand_number < 0.25:
                     msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MATCH')
-                elif random.random() > 0.25 and random.random() < 0.50:
+                elif rand_number > 0.25 and rand_number < 0.50:
                     msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MATCH2')
-                elif random.random() > 0.50 and random.random() < 0.75:
+                elif rand_number > 0.50 and rand_number < 0.75:
                     msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MATCH3')
-                elif random.random() > 0.75 and random.random() < 1:
+                elif rand_number > 0.75 and rand_number < 1:
                     msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MATCH4')
             else:
-                if random.random() > 0 and random.random() < 0.20:
+                if rand_number > 0 and rand_number < 0.20:
                     msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MORE')
-                elif random.random() > 0.20 and random.random() < 0.40:
+                elif rand_number > 0.20 and rand_number < 0.40:
                     msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MORE2')
-                elif random.random() > 0.40 and random.random() < 0.60:
+                elif rand_number > 0.40 and rand_number < 0.60:
                     msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MORE3')
-                elif random.random() > 0.60 and random.random() < 0.80:
+                elif rand_number > 0.60 and rand_number < 0.80:
                     msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MORE4')
-                elif random.random() > 0.80 and random.random() < 1:
+                elif rand_number > 0.80 and rand_number < 1:
                     msg = _('TEAM_02_ASK_QUESTIONS_ANSWER_MORE5')
               
         else:

@@ -105,7 +105,7 @@ msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MORE"
 msgstr "Interessant! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
 
 msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MORE2"
-msgstr "Interessant! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
+msgstr "Gut gemacht! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
 
 msgid "TEAM_02_ASK_QUESTIONS_ANSWER_MORE3"
 msgstr "Tolle Antwort! Möchtest du weitere Fragen beantworten? Wenn ja, sag bitte 'ich bin bereit'."
