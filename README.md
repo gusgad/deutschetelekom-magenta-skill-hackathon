@@ -37,7 +37,7 @@ To bring it down:
 docker-compose down -v
 ```
 
-If you change your Dockerfile and must rebuild the Node.js or React images, run:
+If you change your Dockerfile and must rebuild the Node.js image, run:
 
 ```
 docker-compose up --build
